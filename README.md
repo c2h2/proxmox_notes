@@ -24,6 +24,19 @@ reboot
 
 ## zfs deletion
 
+```
+zfs list
+zfs destroy -r rpool/data
+vim /etc/pve/storage.cfg
 
+cd /etc/systemd/system/zfs-import.target.wants/
+ls
+rm zfs-import@example.service
+systemctl daemon-reload
 
+```
 
+## change welcome ip address
+```
+vim /etc/issue
+```

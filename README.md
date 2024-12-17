@@ -36,6 +36,11 @@ systemctl daemon-reload
 
 ```
 
+## clean a disk
+```
+wipefs -af /dev/sdX
+```
+
 ## change welcome ip address
 ```
 vim /etc/issue
